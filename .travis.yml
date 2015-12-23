@@ -1,8 +1,14 @@
 language: node_js
 node_js:
   - "4.0"
+branches:
+  only:
+  - master
 before_script:
   - npm install -g hexo@3.1.0
-deploy:
-  provider: script
-  script: deploy.sh
+
+script:
+- hexo generate
+
+after_success:
+- hexo d
