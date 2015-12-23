@@ -3,12 +3,13 @@ node_js:
   - "4.0"
 branches:
   only:
-  - master
-before_script:
-  - npm install -g hexo@3.1.0
+    - master
+
+before_install:
+  - npm install -g hexo
 
 script:
-- hexo generate
+  - hexo generate
 
 after_success:
-- hexo d
+  - hexo d

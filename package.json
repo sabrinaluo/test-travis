@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "hexo": {
+    "version": "^3.1.0"
+  },
   "scripts": {
     "test": "hexo generate"
   },
